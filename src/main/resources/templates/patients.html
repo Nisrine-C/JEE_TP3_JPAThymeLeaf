@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+    <script src="/webjars/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap-icons/1.11.3/font/bootstrap-icons.css">
     <title>Title</title>
 </head>
 <body>
@@ -13,7 +15,9 @@
                 <form method="get" th:action="@{index}">
                     <label for="keyword">Keyword</label>
                     <input id="keyword" name="keyword" type="text" class="input" th:value="${keyword}">
-                    <button type="submit" class="btn btn-info">Search</button>
+                    <button type="submit" class="btn btn-info">
+                        <i class="bi bi-search"></i>
+                    </button>
                 </form>
                 <table class="table">
                     <thead>
@@ -34,16 +38,16 @@
                         <td th:text="${p.score}"></td>
                         <td>
                            <a onclick="return confirm('Are you sure?')" class="btn btn-danger"
-                              th:href="@{delete(id=${p.id},keyword=${keyword},page=${currentPage})}">Delete</a>
+                              th:href="@{delete(id=${p.id},keyword=${keyword},page=${currentPage})}"><i class="bi bi-trash"></i></a>
                         </td>
                     </tr>
                     </tbody>
                 </table>
                 <ul class="nav nav-pills gap-1">
-                    <li th:each="page,status:${pages}">
-                        <a th:href="@{/index(page=${status.index},keyword=${keyword})}"
-                           th:class="${currentPage}==${status.index}?'btn btn-info':'btn btn-outline-info'"
-                           th:text="${status.index}"></a>
+                    <li th:each="page,item:${pages}">
+                        <a th:href="@{/index(page=${item.index},keyword=${keyword})}"
+                           th:class="${currentPage}==${item.index}?'btn btn-info':'btn btn-outline-info'"
+                           th:text="${1+item.index}"></a>
                     </li>
                 </ul>
             </div>

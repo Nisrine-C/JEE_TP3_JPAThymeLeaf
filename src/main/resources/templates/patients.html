@@ -10,6 +10,11 @@
         <div class="card">
             <div class="card-header">Liste Patients</div>
             <div class="card-body">
+                <form method="get" th:action="@{index}">
+                    <label for="keyword">Keyword</label>
+                    <input id="keyword" name="keyword" type="text" class="input" th:value="${keyword}">
+                    <button type="submit" class="btn btn-info">Search</button>
+                </form>
                 <table class="table">
                     <thead>
                     <tr>
@@ -32,7 +37,7 @@
                 </table>
                 <ul class="nav nav-pills gap-1">
                     <li th:each="page,status:${pages}">
-                        <a th:href="@{/index(page=${status.index})}"
+                        <a th:href="@{/index(page=${status.index},keyword=${keyword})}"
                            th:class="currentPage==status.index?'btn btn-info':'btn btn-outline-info'"
                            th:text="${status.index}"></a>
                     </li>

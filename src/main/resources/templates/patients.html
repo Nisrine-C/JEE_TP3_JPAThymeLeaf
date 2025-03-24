@@ -30,6 +30,13 @@
                     </tr>
                     </tbody>
                 </table>
+                <ul class="nav nav-pills gap-1">
+                    <li th:each="page,status:${pages}">
+                        <a th:href="@{/index(page=${status.index})}"
+                           th:class="currentPage==status.index?'btn btn-info':'btn btn-outline-info'"
+                           th:text="${status.index}"></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

@@ -21,10 +21,12 @@ public class JeeTp2Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        /*
         Patient patient = new Patient(null, "Imane", new Date(), false, 209);
         patientRepository.save(patient);
         patientRepository.save(new Patient(null, "Hanane", new Date(), false, 209));
         patientRepository.save(new Patient(null, "Mohammed", new Date(), false, 209));
         System.out.println(patient.getScore());
+        */
     }
 }

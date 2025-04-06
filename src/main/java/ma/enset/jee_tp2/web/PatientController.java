@@ -1,5 +1,6 @@
 package ma.enset.jee_tp2.web;
 
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import ma.enset.jee_tp2.entities.Patient;
 import ma.enset.jee_tp2.repository.PatientRepository;
@@ -8,6 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -51,7 +53,8 @@ public class PatientController {
     }
 
     @PostMapping("/save")
-    public String save(Model model,@ModelAttribute Patient patient){
+    public  String save(Model model, @Valid Patient patient, BindingResult bindingResult){
+        if(bindingResult.hasErrors()) return "formPatients";
         patientRepository.save(patient);
         return "formPatients";
     }

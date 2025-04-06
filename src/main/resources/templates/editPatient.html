@@ -15,8 +15,7 @@
 <body>
 <div layout:fragment="content1">
     <div class="container col-md-6">
-        <form method="post" th:action="@{/save}" th:object="${patient}">
-            <div class="mb-3">
+        <form method="post" th:action="@{/save(page=${page},keyword=${keyword})}" th:object="${patient}">    <div class="mb-3">
                 <label for="id" class="form-label">ID</label>
                 <input type="text" class="form-control" id="id" th:value="${patient.id}" disabled>
             </div>
@@ -31,7 +30,8 @@
                 <span class="text-danger" th:errors="${patient.dateNaissance}"></span>
             </div>
             <div class="mb-3">
-                <input type="checkbox" class="form-check-input" id="malade" name="malade" th:value="${patient.malade}"  >
+                <input type="hidden" name="malade" value="false" />
+                <input type="checkbox" class="form-check-input" id="malade" name="malade" th:checked="${patient.malade}"  >
                 <label for="malade" class="form-label">Malade</label>
                 <span class="text-danger" th:errors="${patient.malade}"></span>
             </div>

@@ -70,6 +70,14 @@ public class PatientController {
                         @RequestParam(defaultValue = "0") int page){
         if(bindingResult.hasErrors()) return "formPatients";
         patientRepository.save(patient);
+        if(patient.isMalade())
+        {
+            System.out.println("checkbox is checked");
+        }
+        else
+        {
+            System.out.println("checkbox is not checked");
+        }
         model.addAttribute("page",page);
         model.addAttribute("keyword",keyword);
         return "redirect:/index?page="+page+"&keyword="+keyword;

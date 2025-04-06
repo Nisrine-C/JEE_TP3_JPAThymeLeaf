@@ -27,8 +27,7 @@
                 <span class="text-danger" th:errors="${patient.dateNaissance}"></span>
             </div>
             <div class="mb-3">
-                <input type="hidden" name="malade" value="false" />
-                <input type="checkbox" class="form-check-input" id="malade" name="malade" th:checked="${patient.malade}"  >
+                <input type="checkbox" class="form-check-input" id="malade" name="malade" th:field="${patient.malade}"  >
                 <label for="malade" class="form-label">Malade</label>
                 <span class="text-danger" th:errors="${patient.malade}"></span>
             </div>

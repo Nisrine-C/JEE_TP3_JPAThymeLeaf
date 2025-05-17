@@ -9,6 +9,7 @@ import jakarta.validation.constraints.DecimalMin;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.util.Collection;
 import java.util.Date;
 @Entity
 @Data @AllArgsConstructor @NoArgsConstructor  @Builder
@@ -30,5 +31,6 @@ public class Patient {
     @DecimalMin(value="100",message = "Le score doit être supérieur ou égal à 100")
     private int score;
 
-
+    @OneToMany(mappedBy = "patient",fetch=FetchType.LAZY)
+    private Collection<RendezVous> rendezVous;
 }

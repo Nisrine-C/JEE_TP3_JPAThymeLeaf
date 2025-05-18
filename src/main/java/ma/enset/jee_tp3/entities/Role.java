@@ -1,4 +1,4 @@
-package ma.enset.jee_tp2.entities;
+package ma.enset.jee_tp3.entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;

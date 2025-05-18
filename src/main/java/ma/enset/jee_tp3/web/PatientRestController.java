@@ -1,7 +1,7 @@
-package ma.enset.jee_tp2.web;
+package ma.enset.jee_tp3.web;
 
-import ma.enset.jee_tp2.entities.Patient;
-import ma.enset.jee_tp2.repository.PatientRepository;
+import ma.enset.jee_tp3.entities.Patient;
+import ma.enset.jee_tp3.repository.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

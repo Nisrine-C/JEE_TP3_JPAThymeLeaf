@@ -1,6 +1,6 @@
-package ma.enset.jee_tp2.repository;
+package ma.enset.jee_tp3.repository;
 
-import ma.enset.jee_tp2.entities.User;
+import ma.enset.jee_tp3.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

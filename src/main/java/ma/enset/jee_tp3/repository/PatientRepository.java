@@ -1,6 +1,6 @@
-package ma.enset.jee_tp2.repository;
+package ma.enset.jee_tp3.repository;
 
-import ma.enset.jee_tp2.entities.Patient;
+import ma.enset.jee_tp3.entities.Patient;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

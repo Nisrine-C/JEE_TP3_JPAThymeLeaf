@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ma.enset</groupId>
-    <artifactId>JEE_TP2</artifactId>
+    <artifactId>JEE_TP3_JPAThymeLeaf</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>JEE_TP2</name>
     <description>JEE_TP2</description>

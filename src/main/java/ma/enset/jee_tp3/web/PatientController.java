@@ -1,18 +1,15 @@
-package ma.enset.jee_tp2.web;
+package ma.enset.jee_tp3.web;
 
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
-import ma.enset.jee_tp2.entities.Patient;
-import ma.enset.jee_tp2.repository.PatientRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import ma.enset.jee_tp3.entities.Patient;
+import ma.enset.jee_tp3.repository.PatientRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 
 @Controller

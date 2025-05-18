@@ -1,4 +1,4 @@
-package ma.enset.jee_tp2.enums;
+package ma.enset.jee_tp3.enums;
 
 public enum StatusRDV {
     PENDING,

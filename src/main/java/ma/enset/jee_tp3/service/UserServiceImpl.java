@@ -1,9 +1,9 @@
-package ma.enset.jee_tp2.service;
+package ma.enset.jee_tp3.service;
 
-import ma.enset.jee_tp2.entities.Role;
-import ma.enset.jee_tp2.entities.User;
-import ma.enset.jee_tp2.repository.RoleRepository;
-import ma.enset.jee_tp2.repository.UserRepository;
+import ma.enset.jee_tp3.entities.Role;
+import ma.enset.jee_tp3.entities.User;
+import ma.enset.jee_tp3.repository.RoleRepository;
+import ma.enset.jee_tp3.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import jakarta.transaction.Transactional;
 

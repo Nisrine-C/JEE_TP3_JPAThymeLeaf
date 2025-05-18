@@ -1,4 +1,4 @@
-package ma.enset.jee_tp2.entities;
+package ma.enset.jee_tp3.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

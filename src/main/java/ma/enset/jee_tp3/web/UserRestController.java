@@ -1,7 +1,7 @@
-package ma.enset.jee_tp2.web;
+package ma.enset.jee_tp3.web;
 
-import ma.enset.jee_tp2.entities.User;
-import ma.enset.jee_tp2.service.UserService;
+import ma.enset.jee_tp3.entities.User;
+import ma.enset.jee_tp3.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

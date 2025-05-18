@@ -1,30 +1,24 @@
-package ma.enset.jee_tp2;
+package ma.enset.jee_tp3;
 
-import ma.enset.jee_tp2.entities.*;
-import ma.enset.jee_tp2.enums.StatusRDV;
-import ma.enset.jee_tp2.repository.ConsultationRepository;
-import ma.enset.jee_tp2.repository.MedecinRepository;
-import ma.enset.jee_tp2.repository.PatientRepository;
-import ma.enset.jee_tp2.repository.RendezVousRepository;
-import ma.enset.jee_tp2.service.IHospitalService;
-import ma.enset.jee_tp2.service.UserService;
+import ma.enset.jee_tp3.entities.*;
+import ma.enset.jee_tp3.repository.PatientRepository;
+import ma.enset.jee_tp3.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import java.util.Date;
 import java.util.stream.Stream;
 
 @SpringBootApplication
-public class JeeTp2Application  {
+public class JeeTp3Application {
 
     @Autowired
     private PatientRepository patientRepository;
 
     public static void main(String[] args) {
-        SpringApplication.run(JeeTp2Application.class, args);
+        SpringApplication.run(JeeTp3Application.class, args);
     }
     /*
     @Bean

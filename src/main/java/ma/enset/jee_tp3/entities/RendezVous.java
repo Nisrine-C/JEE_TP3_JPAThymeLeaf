@@ -1,11 +1,11 @@
-package ma.enset.jee_tp2.entities;
+package ma.enset.jee_tp3.entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ma.enset.jee_tp2.enums.StatusRDV;
+import ma.enset.jee_tp3.enums.StatusRDV;
 
 import java.util.Date;
 

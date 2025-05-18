@@ -1,14 +1,14 @@
-package ma.enset.jee_tp2.service;
+package ma.enset.jee_tp3.service;
 
 import jakarta.transaction.Transactional;
-import ma.enset.jee_tp2.entities.Consultation;
-import ma.enset.jee_tp2.entities.Medecin;
-import ma.enset.jee_tp2.entities.Patient;
-import ma.enset.jee_tp2.entities.RendezVous;
-import ma.enset.jee_tp2.repository.ConsultationRepository;
-import ma.enset.jee_tp2.repository.MedecinRepository;
-import ma.enset.jee_tp2.repository.PatientRepository;
-import ma.enset.jee_tp2.repository.RendezVousRepository;
+import ma.enset.jee_tp3.entities.Consultation;
+import ma.enset.jee_tp3.entities.Medecin;
+import ma.enset.jee_tp3.entities.Patient;
+import ma.enset.jee_tp3.entities.RendezVous;
+import ma.enset.jee_tp3.repository.ConsultationRepository;
+import ma.enset.jee_tp3.repository.MedecinRepository;
+import ma.enset.jee_tp3.repository.PatientRepository;
+import ma.enset.jee_tp3.repository.RendezVousRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

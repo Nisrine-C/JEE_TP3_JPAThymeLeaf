@@ -1,9 +1,8 @@
-package ma.enset.jee_tp2.service;
+package ma.enset.jee_tp3.service;
 
 
-import ma.enset.jee_tp2.entities.Role;
-import ma.enset.jee_tp2.entities.User;
-import org.springframework.stereotype.Service;
+import ma.enset.jee_tp3.entities.Role;
+import ma.enset.jee_tp3.entities.User;
 
 
 public interface UserService {

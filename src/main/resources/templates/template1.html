@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
@@ -32,7 +33,11 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" th:href="@{/formPatients}">Logout</a></li>
+                <sec:authorize access="isAuthenticated()">
+                    <li>
+                        <a class="dropdown-item" th:text="${#authentication?.name}"></a>
+                    </li>
+                </sec:authorize>
             </ul>
         </li>
     </ul>

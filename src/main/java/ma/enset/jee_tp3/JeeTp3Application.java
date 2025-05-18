@@ -14,9 +14,6 @@ import java.util.stream.Stream;
 @SpringBootApplication
 public class JeeTp3Application {
 
-    @Autowired
-    private PatientRepository patientRepository;
-
     public static void main(String[] args) {
         SpringApplication.run(JeeTp3Application.class, args);
     }

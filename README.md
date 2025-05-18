@@ -56,4 +56,4 @@ spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
 ```
-8. Reprendre les exemples  du Patient, Médecin, rendez-vous, consultation, users et roles de la vidéo : 
+8. Reprendre les exemples  du Patient, Médecin, rendez-vous, consultation, users et roles de la vidéo :

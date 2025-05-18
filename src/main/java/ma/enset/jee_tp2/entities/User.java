@@ -1,5 +1,6 @@
 package ma.enset.jee_tp2.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,6 +17,7 @@ public class User {
     private String userId;
     @Column(name="USER_NAME",unique= true,length = 20)
     private String username;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name="USERS_ROLES")

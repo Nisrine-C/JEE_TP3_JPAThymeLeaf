@@ -99,6 +99,18 @@ public class JeeTp2Application  {
             userService.addRoleToUser("user1","USER");
             userService.addRoleToUser("admin","ADMIN");
             userService.addRoleToUser("admin","USER");
+
+            try {
+                User user4 = userService.authenticate("user1","123456");
+                System.out.println(user4.getUserId());
+                System.out.println(user4.getUsername());
+                System.out.println("Roles ==>");
+                user4.getRoles().forEach(r->{
+                    System.out.println("Roles=>"+r.getRoleName());
+                });
+            }catch(Exception e) {
+                e.printStackTrace();
+            }
         };
 
     }
